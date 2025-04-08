@@ -12,11 +12,11 @@ driver.get('https://www.speexx.co.th/index.php/new-online-language-training-for-
 btn1 = driver.find_element(By.ID,'menu-item-15281').click()
 
 inptu1  = driver.find_element(By.NAME,'userName')
-inptu1.send_keys('67-65113340548@ubu.ac.th')
+inptu1.send_keys('#email')
 btnEmail = driver.find_element(By.ID,'button-next').click()
 time.sleep(7)
 inptu2  = driver.find_element(By.NAME,'password')
-inptu2.send_keys('uBu@65113340548')
+inptu2.send_keys('#password')
 btnlogin = driver.find_element(By.ID,'button-sign-in').click()
 time.sleep(5)
 btndotest = driver.find_element(By.XPATH,'/html/body/div/div[2]/div/div[2]/div[3]/div[1]/div[2]/button[1]').click()
